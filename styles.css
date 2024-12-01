@@ -62,7 +62,7 @@ nav ul {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #1e1e1e;
+    background: linear-gradient(to bottom, #000000, #2c3e50);
     text-align: center;
 }
 
@@ -92,7 +92,7 @@ nav ul {
 .about-section {
     padding: 60px 20px;
     text-align: center;
-    background-color: #181818;
+    background: linear-gradient(to bottom, #2c3e50, #34495e);
 }
 
 .about-section h1 {
@@ -105,13 +105,26 @@ nav ul {
 .about-section p {
     font-size: 1.2em;
     line-height: 1.8em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Adjusting the image */
+.about-section img {
+    width: 300px; /* Set width */
+    height: 300px; /* Set height */
+    object-fit: cover; /* Ensures the image fills the area */
+    object-position: 50% 70%;
+    border-radius: 50%; /* Circular image */
+    margin: 20px 0;
+    border: 5px solid #fff; /* Optional: border around the image */
 }
 
 /* Gallery Section */
 .gallery-section {
     padding: 60px 20px;
     text-align: center;
-    background-color: #202020;
+    background: linear-gradient(to bottom, #34495e, #5f6a74);
 }
 
 .gallery-section h1 {
@@ -137,7 +150,7 @@ nav ul {
 .contact-section {
     padding: 60px 20px;
     text-align: center;
-    background-color: #121212;
+    background: linear-gradient(to bottom, #5f6a74, #7f8c8d);
 }
 
 .contact-section h1 {
@@ -148,11 +161,24 @@ nav ul {
 }
 
 .contact-section p a {
-    color: #1e90ff;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.contact-section p a i {
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 1.5em; /* Adjust icon size */
 }
 
 .contact-section p a:hover {
     text-decoration: underline;
 }
+
+.contact-section p a:hover i {
+    color: #0073e6; /* Change icon color on hover */
+}
+
